@@ -1,0 +1,366 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Barlow:wght@300;400;500&family=Josefin+Sans:wght@300&display=swap"
+        rel="stylesheet">
+
+    <title>loopstudios</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .hitam {
+            background-color: rgba(0, 0, 0, .41);
+            box-shadow: 12px 1px 11px 10px rgba(0, 0, 0, .41);
+
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        barlow: ['Barlow'],
+                        alata: ['Alata'],
+                        Josef: ['Josefin+Sans'],
+                    }
+                }
+            }
+        }
+    </script>
+
+
+</head>
+
+<!-- bg-black sm:bg-red-600 md:bg-teal-500 lg:bg-yellow-400 xl:bg-white -->
+
+<body class="p-0 m-0 overflow-x-hidden
+">
+
+
+
+    <!-- todo  navigasi bar -->
+    <nav
+        class="flex justify-around  items-center relative h-[45px] px-[20px]   mt-[30px] w-full z-100   sm:justify-between  ">
+        <img src="images/logo.svg" alt="logo"
+            class="-translate-x-14 scale-[0.8] sm:scale-100 sm:translate-x-4  md:scale-[.8] md:-translate-x-0">
+        <img src="images/icon-hamburger.svg" alt="hamburger menu"
+            class="hamburger hover:cursor-pointer scale-[0.8] translate-x-10 sm:scale-100 sm:-translate-x-4 md:hidden">
+        <ul
+            class="absolute bg-[#232323]  w-full flex flex-col h-screen translate-y-64 justify-around  h-screen items-center md:items-start py-20 
+             md:flex z-[99999] 
+            
+            md:relative md:right-0 md:flex-row md:h-0 md:bg-transparent md:translate-y-0 md:py-0 md:w-1/2 md:items-center">
+            <img src="images/icon-close.svg" alt="close" class="absolute left-5  md:hidden top-15 z-[99999999] tutup">
+            <li class="md:text-center md:m-auto"><a href="#" class="text-white font-josef font-semibold">About</a></li>
+            <li class="md:text-center md:m-auto"><a href="#" class="text-white font-josef font-semibold">Careers</a>
+            </li>
+            <li class="md:text-center md:m-auto"><a href="#" class="text-white font-josef font-semibold">Events</a></li>
+            <li class="md:text-center md:m-auto"><a href="#" class="text-white font-josef font-semibold">Product</a>
+            </li>
+            <li class="md:text-center md:m-auto"><a href="#" class="text-white font-josef font-semibold">Support</a>
+            </li>
+        </ul>
+    </nav>
+    <!--  ! end  navigasi bar -->
+
+
+
+
+
+    <!-- todo section pertama -->
+    <section class="relative">
+
+        <picture>
+            <source media="(min-width: 768px)" srcset="images/desktop/image-hero.jpg">
+            <img src="images/mobile/image-hero.jpg" alt="hero img"
+                class="-translate-y-[75px] scale-[1.8] sm:scale-100 md:scale-100  relative  -z-10">
+        </picture>
+        <h1
+            class=" font-josef -translate-y-[530px] translate-x-[8px] mx-auto uppercase  p-[30px] border-2 border-white w-[90%]   font-light text-[41px]  text-white  -mb-[200px]  sm:-translate-y-[900px] md:-mb-0 md:-translate-y-[350px] md:w-1/2 md:text-4xl md:mr-auto md:ml-[50px]   lg:text-5xl lg:-translate-y-[400px]  xl:text-7xl xl:-translate-y-[500px] xl:w-1/2">
+            Immersive<br class="xl:hidden" />
+            experiences<br class="hidden md:block">that <br class="xl:hidden" /> deliver</h1>
+    </section>
+
+    <!-- ! end section pertama -->
+
+
+
+
+
+
+    <!-- todo section kedua -->
+    <section class="px-7 -mt-[250px] mb-9   sm:mt-10  md:-mt-44">
+
+        <picture>
+            <source media="(min-width: 768px)" srcset="images/desktop/image-interactive.jpg">
+            <img src="images/mobile/image-interactive.jpg" alt="interactive"
+                class="md:scale-[.75] md:-translate-x-16 lg:scale-100 md:translate-x-10">
+        </picture>
+        <div
+            class="tulisan md:bg-white md:py-12 md:px-10 md:w-[58%] md:translate-x-[325px] md:-translate-y-44 lg:w-[60%] lg:px-16 lg:translate-x-[360px]">
+            <h1
+                class="font-josef font-[200]  mt-4 mb-5 text-center uppercase text-4xl text-[#252525] sm:text-5xl md:text-4xl md:w-[100%] md:m-auto  lg:text-5xl">
+                The
+                leader in
+                interactive VR
+            </h1>
+            <p
+                class="font-alata text-gray-500 w-[85%] text-center m-auto font-normal pb-3 md:w-[100%] md:mt-5 md:text-left md:text-base lg:text-base lg:w-[100%]">
+                Founded
+                in 2011,
+                Loopstudios
+                has been
+                producing
+                world-class
+                virtual
+                reality
+                projects for some of the best companies around the globe. Our award-winning
+                creations have transformed businesses through digital experiences that bind
+                to their brand.</p>
+        </div>
+    </section>
+    <!-- ! end section pertama -->
+
+
+
+
+
+    <!-- todo section tiga -->
+    <section
+        class="mt-10 bg-white grid grid-cols-1  md:grid-cols-4 px-[20px] pb-10 gap-y-[20px] sm:pt-14 md:gap-5 lg:-mt-[150px]">
+        <h1
+            class="font-josef font-[200] text-center uppercase text-4xl py-4  md:py-2  col-start-1 lg:text-[34px] lg:mb-9">
+            Our
+            creations</h1>
+        <!--? ============GAMBAR 1=========== -->
+        <picture class="overflow-hidden md:col-start-1 md:row-start-2 relative h-full">
+            <source media=" (min-width: 768px)" srcset="images/desktop/image-deep-earth.jpg">
+            <img src="images/mobile/image-deep-earth.jpg" alt="" class="w-full ">
+            <div
+                class=" absolute top-0 left-0 bottom-0 pt-8 px-5  uppercase text-xl text-white hitam  font-josef font-light sm:px-16 sm:text-4xl sm:pt-16 md:h-1/2 md:top-1/3 md:translate-y-24 md:-translate-x-0 md:text-center md:-auto md:text-3xl md:pt-5 md:w-full  lg:translate-y-2/4 lg:text-4xl xl:text-5xl  xl:translate-y-3/5 ">
+                <h1 class="">Deep <br>earth</h1>
+            </div>
+        </picture>
+        <!--? ============END GAMBAR 1=========== -->
+
+
+        <!--! ======================= -->
+
+
+
+
+        <!--? ============GAMBAR 2=========== -->
+        <picture class="overflow-hidden md:col-start-2 md:row-start-2 relative ">
+            <source media=" (min-width: 768px)" srcset="images/desktop/image-night-arcade.jpg">
+            <img src="images/mobile/image-night-arcade.jpg" alt="" class="w-full">
+            <div
+                class=" absolute top-0 left-0 bottom-0 pt-8 px-5  uppercase text-xl text-white hitam  font-josef font-light sm:px-16 sm:text-4xl sm:pt-16 md:h-1/2 md:top-1/3 md:translate-y-24 md:-translate-x-0 md:text-center md:-auto md:text-3xl md:pt-5 md:w-full  lg:translate-y-2/4 lg:text-4xl xl:text-5xl  xl:translate-y-3/5 ">
+                <h1 class="">Night <br>arcade</h1>
+            </div>
+        </picture>
+        <!--? ============END GAMBAR 2=========== -->
+
+
+
+
+        <!--! ======================= -->
+
+
+
+
+        <!--? ============GAMBAR 3=========== -->
+        <picture class="overflow-hidden md:col-start-3 md:row-start-2 relative">
+            <source media=" (min-width: 768px)" srcset="images/desktop/image-soccer-team.jpg">
+            <img src="images/mobile/image-soccer-team.jpg" alt="" class="w-full">
+            <div
+                class=" absolute top-0 left-0 bottom-0 pt-8 px-5  uppercase text-xl text-white hitam  font-josef font-light sm:px-16 sm:text-4xl sm:pt-16 md:h-1/2 md:top-1/3 md:translate-y-24 md:-translate-x-0 md:text-center md:-auto md:text-3xl md:pt-5 md:w-full  lg:translate-y-2/4 lg:text-4xl xl:text-5xl  xl:translate-y-3/5 ">
+                <h1 class="">Soccer<br>team VR</h1>
+            </div>
+        </picture>
+        <!--? ============END GAMBAR 3=========== -->
+
+
+
+        <!--! ======================= -->
+
+
+
+
+        <!--? ============GAMBAR 4=========== -->
+        <picture class="overflow-hidden md:col-start-4 md:row-start-2 relative ">
+            <source media=" (min-width: 768px)" srcset="images/desktop/image-grid.jpg">
+            <img src="images/mobile/image-grid.jpg" alt="" class="w-full">
+            <div
+                class=" absolute top-0 left-0 bottom-0 pt-8 px-5  uppercase text-xl text-white hitam  font-josef font-light sm:px-16 sm:text-4xl sm:pt-16 md:h-1/2 md:top-1/3 md:translate-y-24 md:-translate-x-0 md:text-center md:-auto md:text-3xl md:pt-5 md:w-full  lg:translate-y-2/4 lg:text-4xl xl:text-5xl  xl:translate-y-3/5 ">
+                <h1 class="">The <br>grid</h1>
+            </div>
+        </picture>
+        <!--? ============END GAMBAR 4=========== -->
+
+        <!--* ======================= -->
+
+
+
+        <!--! ======================= -->
+
+
+
+
+        <!--? ============GAMBAR 5=========== -->
+        <picture class="overflow-hidden md:col-start-1 md:row-start-3 relative">
+            <source media=" (min-width: 768px)" srcset="images/desktop/image-from-above.jpg">
+            <img src="images/mobile/image-from-above.jpg" alt="" class="w-full">
+            <div
+                class=" absolute top-0 left-0 bottom-0 pt-8 px-5  uppercase text-xl text-white hitam  font-josef font-light sm:px-16 sm:text-4xl sm:pt-16 md:h-1/2 md:top-1/3 md:translate-y-24 md:-translate-x-0 md:text-center md:-auto md:text-3xl md:pt-5 md:w-full  lg:translate-y-2/4 lg:text-4xl xl:text-5xl  xl:translate-y-3/5 ">
+                <h1 class="">From up <br>above VR</h1>
+            </div>
+        </picture>
+        <!--? ============END GAMBAR 5=========== -->
+
+        <!--* ======================= -->
+
+
+
+        <!--! ======================= -->
+
+
+
+
+        <!--? ============GAMBAR 6=========== -->
+        <picture class="overflow-hidden md:col-start-2 md:row-start-3 relative">
+            <source media=" (min-width: 768px)" srcset="images/desktop/image-pocket-borealis.jpg">
+            <img src="images/mobile/image-pocket-borealis.jpg" alt="" class="w-full">
+            <div
+                class=" absolute top-0 left-0 bottom-0 pt-8 px-5  uppercase text-xl text-white hitam  font-josef font-light sm:px-16 sm:text-4xl sm:pt-16 md:h-1/2 md:top-1/3 md:translate-y-24 md:-translate-x-0 md:text-center md:-auto md:text-3xl md:pt-5 md:w-full  lg:translate-y-2/4 lg:text-4xl xl:text-5xl  xl:translate-y-3/5 ">
+                <h1 class="">Pocket <br>borealis</h1>
+            </div>
+        </picture>
+        <!--? ============END GAMBAR 6=========== -->
+
+        <!--* ======================= -->
+
+
+
+
+        <!--! ======================= -->
+
+
+
+
+        <!--? ============GAMBAR 7=========== -->
+        <picture class="overflow-hidden md:col-start-3 md:row-start-3 relative">
+            <source media=" (min-width: 768px)" srcset="images/desktop/image-curiosity.jpg">
+            <img src="images/mobile/image-curiosity.jpg" alt="" class="w-full">
+            <div
+                class=" absolute top-0 left-0 bottom-0 pt-8 px-5  uppercase text-xl text-white hitam  font-josef font-light sm:px-16 sm:text-4xl sm:pt-16 md:h-1/2 md:top-1/3 md:translate-y-24 md:-translate-x-0 md:text-center md:-auto md:text-3xl md:pt-5 md:w-full  lg:translate-y-2/4 lg:text-4xl xl:text-5xl  xl:translate-y-3/5 ">
+                <h1 class="">The <br>curiosity</h1>
+            </div>
+        </picture>
+        <!--? ============END GAMBAR 7=========== -->
+
+        <!--* ======================= -->
+
+
+
+
+        <!--! ======================= -->
+
+
+
+
+        <!--? ============GAMBAR 8=========== -->
+        <picture class="overflow-hidden md:col-start-4 md:row-start-3 relative">
+            <source media=" (min-width: 768px)" srcset="images/desktop/image-fisheye.jpg">
+            <img src="images/mobile/image-fisheye.jpg" alt="" class="w-full">
+            <div
+                class=" absolute top-0 left-0 bottom-0 pt-8 px-5  uppercase text-xl text-white hitam  font-josef font-light sm:px-16 sm:text-4xl sm:pt-16 md:h-1/2 md:top-1/3 md:translate-y-24 md:-translate-x-0 md:text-center md:-auto md:text-3xl md:pt-5 md:w-full  lg:translate-y-2/4 lg:text-4xl xl:text-5xl  xl:translate-y-3/5 ">
+                <h1 class=""> Make it <br>fisheye</h1>
+            </div>
+        </picture>
+        <!--? ============END GAMBAR 8=========== -->
+
+        <!--* ======================= -->
+
+        <div class="block m-auto mt-3 sm:mt-5 md:col-start-4 md:row-start-1">
+            <button
+                class="px-9 py-1 border-2 border-black font-barlow font-semibold  sm:px-11 sm:py-2 sm:text-lg lg:mb-10  ">SEE
+                ALL</button>
+        </div>
+
+    </section>
+    <!-- ! end section tiga -->
+
+
+
+
+
+
+
+    <!-- todo footer -->
+
+    <footer
+        class="  flex flex-col justify-center md:justify-between md:flex-row items-center py-12 bg-black md:px-12 md:py-5">
+        <div class="first">
+            <img src="images/logo.svg" alt="logo" class="scale-95 mb-2">
+            <ul class="flex justify-between py-4 items-center flex-col md:flex-row md:justify-between ">
+                <li class="my-2 md:mx-3  "><a href="#" class="capitalize  text-white font-josef font-[500] ">About</a>
+                </li>
+                <li class="my-2 md:mx-3 "><a href="#" class="capitalize  text-white font-josef font-[500] ">Careers</a>
+                </li>
+                <li class="my-2 md:mx-3 "><a href="#" class="capitalize  text-white font-josef font-[500] ">events</a>
+                </li>
+                <li class="my-2 md:mx-3 "><a href="#" class="capitalize  text-white font-josef font-[500] ">products</a>
+                </li>
+                <li class="my-2 md:mx-3 "><a href="#" class="capitalize  text-white font-josef font-[500] ">support</a>
+                </li>
+            </ul>
+        </div>
+        <div class="second flex flex-col w-[70%] mt-5 m-auto justify-around md:w-1/2  ">
+            <div class="media-social flex  w-full justify-around">
+                <img src="images/icon-facebook.svg" alt="facebook">
+                <img src="images/icon-twitter.svg" alt="twiter">
+                <img src="images/icon-pinterest.svg" alt="pinterest">
+                <img src="images/icon-instagram.svg" alt="instagram">
+            </div>
+            <!--  -->
+            <p class="font-joset font-[300] text-center text-white pt-9">© 2022 | Syaid Alfarishi</p>
+        </div>
+    </footer>
+
+    <!-- ! end footer -->
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            if (window.innerWidth <= 768) {
+                $("nav ul").fadeOut(0);
+            } else {
+                $("nav ul").fadeIn();
+
+            }
+
+            $(".hamburger").click(function (e) {
+                $("nav ul").fadeToggle(300);
+                e.preventDefault();
+
+            });
+
+            $(".tutup").click(function (e) {
+                $("nav ul").fadeToggle(300);
+                e.preventDefault();
+
+            });
+        });
+    </script>
+</body>
+
+</html>
