@@ -20,6 +20,10 @@
             box-shadow: 12px 1px 11px 10px rgba(0, 0, 0, .41);
 
         }
+
+        * {
+            /* overflow-x: hidden; */
+        }
     </style>
 
     <script>
@@ -52,20 +56,27 @@
         <img src="images/logo.svg" alt="logo"
             class="-translate-x-14 scale-[0.8] sm:scale-100 sm:translate-x-4  md:scale-[.8] md:-translate-x-0">
         <img src="images/icon-hamburger.svg" alt="hamburger menu"
-            class="hamburger hover:cursor-pointer scale-[0.8] translate-x-10 sm:scale-100 sm:-translate-x-4 md:hidden">
+            class="hamburger hover:cursor-pointer scale-[0.8] translate-x-5 sm:scale-100 sm:-translate-x-4 md:hidden">
         <ul
-            class="absolute bg-[#232323]  w-full flex flex-col h-screen translate-y-64 justify-around  h-screen items-center md:items-start py-20 
+            class="absolute bg-[#5f0272]  w-full flex flex-col h-screen translate-y-64 justify-center box-border items-center md:items-start py-20 
              md:flex z-[99999] 
             
             md:relative md:right-0 md:flex-row md:h-0 md:bg-transparent md:translate-y-0 md:py-0 md:w-1/2 md:items-center">
-            <img src="images/icon-close.svg" alt="close" class="absolute left-5  md:hidden top-15 z-[99999999] tutup">
-            <li class="md:text-center md:m-auto"><a href="#" class="text-white font-josef font-semibold">About</a></li>
-            <li class="md:text-center md:m-auto"><a href="#" class="text-white font-josef font-semibold">Careers</a>
+            <img src="images/icon-close.svg" alt="close"
+                class="absolute right-8  md:hidden top-[160px] z-[99999999] tutup">
+            <li class="md:text-center md:m-auto my-6 sm:my-0"><a href="#"
+                    class="text-white font-josef font-semibold text-xl">About</a>
             </li>
-            <li class="md:text-center md:m-auto"><a href="#" class="text-white font-josef font-semibold">Events</a></li>
-            <li class="md:text-center md:m-auto"><a href="#" class="text-white font-josef font-semibold">Product</a>
+            <li class="md:text-center md:m-auto my-6 sm:my-0"><a href="#"
+                    class="text-white font-josef font-semibold text-xl">Careers</a>
             </li>
-            <li class="md:text-center md:m-auto"><a href="#" class="text-white font-josef font-semibold">Support</a>
+            <li class="md:text-center md:m-auto my-6 sm:my-0"><a href="#"
+                    class="text-white font-josef font-semibold text-xl">Events</a></li>
+            <li class="md:text-center md:m-auto my-6 sm:my-0"><a href="#"
+                    class="text-white font-josef font-semibold text-xl">Product</a>
+            </li>
+            <li class="md:text-center md:m-auto my-6 sm:my-0"><a href="#"
+                    class="text-white font-josef font-semibold text-xl">Support</a>
             </li>
         </ul>
     </nav>
@@ -81,12 +92,12 @@
         <picture>
             <source media="(min-width: 768px)" srcset="images/desktop/image-hero.jpg">
             <img src="images/mobile/image-hero.jpg" alt="hero img"
-                class="-translate-y-[75px] scale-[1.8] sm:scale-100 md:scale-100  relative  -z-10">
+                class="-translate-y-[75px] scale-100 sm:scale-100 md:scale-100  relative  -z-10">
         </picture>
         <h1
-            class=" font-josef -translate-y-[530px] translate-x-[8px] mx-auto uppercase  p-[30px] border-2 border-white w-[90%]   font-light text-[41px]  text-white  -mb-[200px]  sm:-translate-y-[900px] md:-mb-0 md:-translate-y-[350px] md:w-1/2 md:text-4xl md:mr-auto md:ml-[50px]   lg:text-5xl lg:-translate-y-[400px]  xl:text-7xl xl:-translate-y-[500px] xl:w-1/2">
+            class=" font-josef -translate-y-[530px] translate-x-[8px] mx-auto uppercase  p-[20px] border-2 border-white w-[90%]   font-light text-[34px]  text-white  -mb-[200px]  sm:-translate-y-[700px] md:-mb-0 md:-translate-y-[350px] md:w-1/2 md:text-4xl md:mr-auto md:ml-[50px]   lg:text-5xl lg:-translate-y-[400px]  xl:text-7xl xl:-translate-y-[500px] xl:w-1/2">
             Immersive<br class="xl:hidden" />
-            experiences<br class="hidden md:block">that <br class="xl:hidden" /> deliver</h1>
+            experiences <br class="hidden md:block">that <br class="xl:hidden" /> deliver</h1>
     </section>
 
     <!-- ! end section pertama -->
@@ -343,6 +354,7 @@
 
             if (window.innerWidth <= 768) {
                 $("nav ul").fadeOut(0);
+
             } else {
                 $("nav ul").fadeIn();
 
